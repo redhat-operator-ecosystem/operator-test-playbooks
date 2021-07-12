@@ -8,7 +8,7 @@ metadata:
     containerImage: registry.connect.redhat.com/elos/erynis-operator@sha256:330e05580bc3a4eaf8392d54aeda588079603c086cd729ada598e60c956161c5
     createdAt: '2021-02-23'
     description: Erynis Monitoring Stack based on Thanos and Grafana
-    operators.operatorframework.io/builder: operator-sdk-v1.3.0
+    operators.operatorframework.io/builder: operator-sdk-v1.9.0
     operators.operatorframework.io/project_layout: helm.sdk.operatorframework.io/v1
     repository: https://github.com/elos-tech
     support: ELOS Technologies
