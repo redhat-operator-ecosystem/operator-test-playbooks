@@ -33,6 +33,7 @@ jobs:
         run: |
           podman --version
           cd Dockerfiles/midstream/
+          export latestTag=`git tag | sort -V | tail -1`
           podman build -t midstream_image:latest -f Dockerfile --build-arg OPERATOR_SDK_VERSION=v1.4.0 --build-arg OPERATOR_TEST_PLAYBOOKS_TAG=master
           podman login -u="$QUAY_USERNAME" -p="$QUAY_PASSWORD" quay.io
-          podman push midstream_image:latest quay.io/samvarankashyap/cvp-midstream-image
+          podman push midstream_image:$latestTag quay.io/cvpops/cvp-midstream-image:$latestTag
