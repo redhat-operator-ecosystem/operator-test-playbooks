@@ -18,7 +18,7 @@ git clone https://github.com/redhat-operator-ecosystem/operator-test-playbooks.g
 cd Dockerfiles
 ### podman build -t <image_name>:<tagname> -f <filepath> --build-arg OPERATOR_SDK_VERSION=<operator_sdk_version> --build-arg OPERATOR_TEST_PLAYBOOKS_TAG=<operator_test_playbooks_tag>
 ### example:
-podman build -t midstream_image:latest -f Dockerfile --build-arg OPERATOR_SDK_VERSION=v1.4.0 --build-arg OPERATOR_TEST_PLAYBOOKS_TAG=v1.0.11
+podman build -t midstream_image:latest -f Dockerfile --build-arg OPERATOR_SDK_VERSION=v1.9.0 --build-arg OPERATOR_TEST_PLAYBOOKS_TAG=v1.0.11
 ```
 
 ## Running image with operator bundle
